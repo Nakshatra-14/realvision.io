@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content</title>
     <link rel="stylesheet" href="/css/content.css">
+    <style>
+    .container {
+    max-width: 1060;
+    margin: 20px auto;
+    width: 100%;
+}
+.main {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+.title {
+    font-size:larger;
+    font-weight: 600
+}
+.button {
+    display:flex;
+    width: 60px;
+    font-size:large;
+    padding: 10px 16px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: 400;
+    background-color: rgb(221, 221, 221);
+}
+.button:hover {
+    background-color:lightskyblue;
+    transition: 0.6s;
+}
+</style>
+    
 </head>
 <body>
     <div class="main container">
     <div class="title"><h1>Click here to verify</h1></div>
     <div class="button">
-        <a href="/html/home.html">
+        <a href="home.html">
             <h3>Verify</h3>
         </a>
     </div>
