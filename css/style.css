@@ -1,1 +1,131 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
 
+/* Variables */
+
+:root {
+    --container-color:#1a1e21;
+    --second-color:#fd8f44;
+    --text-color:#172317;
+    --bg-color:#fff;
+}
+::selection {
+    color: black;
+    background-color: rgba(255, 166, 0, 0.763);
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+}
+section {
+    padding: 3rem 0 2rem;
+}
+.container {
+    max-width: 1060;
+    margin: 20px auto;
+    width: 100%;
+}
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 0;
+}
+.logo {
+    font-size: xx-large;
+    font-weight: 600;
+    color: gray;
+}
+.logo span {
+    font-size: xx-large;
+    color: brown;
+}
+.logo span2 {
+    font-size: xx-large;
+    color: rgba(165, 42, 42, 0.532);
+} 
+.login {
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: rgb(123, 34, 1);
+    color: white;
+}
+.login:hover {
+    background: orangered;
+    transition: 0.4s;
+}
+.home {
+    width: 100%;
+    min-height: 400px;
+    background: var(--container-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+.home:hover {
+    background:rgb(46, 46, 46);
+    transition: 0.6s;
+}
+.home-title {
+    padding:auto;
+    color: white;
+    text-align:justify;
+}
+.home-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.home-subtitle {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+/* Filters */
+.filter {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem !important;
+}
+.filter-item {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor:pointer;
+}
+.active-filter {
+    background: var(--second-color);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+.active-filter:hover{
+    background: orangered;
+    transition: 0.4s;
+}
+
+.post {
+    text-align:center ;
+}
