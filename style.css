@@ -1,0 +1,126 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2e8831;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+main {
+    padding: 20px;
+}
+
+.advice {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Customised Download Button */
+.download-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px; /* Increased padding for better visibility */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* Larger font size */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1); /* Simplified box-shadow for consistency */
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Add a slight scaling effect on hover */
+}
+
+
+.samples {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sample-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sample-image {
+    max-width: 50%;
+    border-radius: 5px;
+    height: 416px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sample-images {
+        flex-direction: column; /* Stack images on smaller screens */
+        align-items: center;
+    }
+    
+    .sample-image {
+        max-width: 80%; /* Adjust image width */
+        height: auto; /* Make height responsive */
+    }
+
+    header, main, footer {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .download-btn {
+        padding: 10px 25px; /* Adjust button padding for smaller screens */
+        font-size: 16px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .sample-image {
+        max-width: 100%; /* Full width on very small screens */
+    }
+
+    .download-btn {
+        width: 100%; /* Make button full-width */
+        text-align: center; /* Center text */
+        margin-top: 10px; /* Add margin for spacing */
+        font-size: 16px; /* Further adjust button font size */
+        padding: 12px 0; /* Padding adjustment for full-width button */
+    }
+    
+    footer {
+        position: static; /* Make footer static for better usability on very small screens */
+        padding: 15px 0;
+    }
+}

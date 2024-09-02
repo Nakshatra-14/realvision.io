@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Info</title>
+    <link rel="stylesheet" href='./style.css'>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2e8831;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .advice-container {
+            display: flex; /* Flexbox to place images beside text */
+            gap: 20px; /* Spacing between text and images */
+            align-items: flex-start; /* Align items to the top */
+        }
+
+        .advice {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Takes available space */
+        }
+
+        .advice-images {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            gap: 10px; /* Spacing between images */
+            flex: 1; /* Takes available space */
+        }
+
+        .advice-image {
+            max-width: 100%;
+            border-radius: 5px;
+            height: 150px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .samples {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sample-images {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .sample-image {
+            max-width: 50%;
+            border-radius: 5px;
+            height: 416px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .sample-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sample-image {
+                max-width: 80%;
+                height: auto;
+            }
+
+            header, main, footer {
+                padding: 10px;
+            }
+
+            .download-btn {
+                padding: 10px 25px;
+                font-size: 16px;
+            }
+            
+            .advice-container {
+                flex-direction: column; /* Stack text and images on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sample-image {
+                max-width: 100%;
+            }
+
+            .download-btn {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 12px 0;
+            }
+            
+            footer {
+                position: static;
+                padding: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./assets/Designer.png" alt="Nutri Info Logo" class="logo">
+            <h1>NUTRI INFO</h1>
+        </div>
+    </header>
+ 
+    <main>
+        <!-- Advice section with images beside it -->
+        <div class="advice-container">
+            <section class="advice">
+                <h2>How to Use Our Application</h2>
+                <ul>
+                    <li>Download and install the application from the link below.</li>
+                    <li>Create an account to start tracking your nutrition.</li>
+                    <li>Explore the various features to get personalized dietary advice.</li>
+                    <li>Check the sample pictures below to get an idea of the app’s interface.</li>
+                </ul>
+                <a href='' class="download-btn">Download Now</a>
+            </section>
+            <!-- New images added beside the advice section -->
+            <div class="advice-images">
+                <img src="./assets/images.jpeg" alt="Advice Image 1" class="advice-image">
+                <img src="./assets/167-key-to-healthy-lifestyle-of-professionals.jpg" alt="Advice Image 2" class="advice-image">
+            </div>
+        </div>
+ 
+        <section class="samples">
+            <h2>Sample Screenshots</h2>
+            <div class="sample-images">
+                <img src="./assets/WhatsApp Image 2024-08-28 at 19.02.15.jpeg" alt="Sample Screenshot 1" class="sample-image">
+                <img src="./assets/WhatsApp Image 2024-08-28 at 19.28.42 (1).jpeg" alt="Sample Screenshot 2" class="sample-image">
+                <img src="./assets/WhatsApp Image 2024-08-28 at 19.28.41.jpeg" alt="Sample Screenshot 3" class="sample-image">
+                <img src="./assets/WhatsApp Image 2024-08-28 at 19.28.41 (1).jpeg" alt="Sample Screenshot 4" class="sample-image">
+                <img src="./assets/WhatsApp Image 2024-08-28 at 19.28.40.jpeg" alt="Sample Screenshot 5" class="sample-image">
+                <img src="./assets/WhatsApp Image 2024-08-28 at 19.28.42.jpeg" alt="Sample Screenshot 6" class="sample-image">
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2024 Nutri Info. All rights reserved.</p>
+    </footer>
+ 
+    <script src="scripts.js"></script>
+</body>
+</html>
