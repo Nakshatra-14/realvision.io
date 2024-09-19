@@ -21,6 +21,15 @@ header {
   align-items: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
 nav .logo h1 {
   color: #ff9900;
   display: inline-block;
@@ -42,28 +51,43 @@ nav ul li a {
   font-weight: bold;
 }
 
-.download-btn {
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin-right: auto; /* To push the download button to the right */
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+
+.btn {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
   transition: background-color 0.3s ease;
+  right: 20px; /* Ensures the download button stays at the far right */
 }
 
-.download-btn:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background-color: #23ab35;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(135deg, #5b86e5, #36d1dc);
   color: #fff;
   padding: 60px 80px;
-  height: 80vh;
+  height: 120vh;
 }
 
 .hero-content {
@@ -89,7 +113,23 @@ nav ul li a {
 }
 
 .hero-image img {
-  width: 400px;
+  width: 300px;
+  border-radius: 40px;
+}
+
+.btn_2 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_2:hover {
+  background-color: #b39e00;
 }
 
 /* Features Section */
@@ -156,3 +196,125 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.feature-item:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #ff6600;
+}
+
+
+/* @media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-image img {
+      width: 200px;
+      margin-top: 5px;
+  }
+
+  .features {
+      flex-direction: column;
+  }
+
+  .feature-item {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .comparison {
+      flex-direction: column;
+  }
+
+  .paypulse-features, .other-apps {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+} */
+ /* General settings to avoid overflow */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+/* Ensure the hero section and other large sections use full width */
+.hero, .features-container, #benefits, footer {
+  width: 100%vw;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  /* Stack the nav elements vertically */
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  /* Adjust the hero section for mobile */
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+  }
+
+  .hero-content h2 {
+      font-size: 2rem;
+  }
+
+  .hero-image img {
+      width: 250px;
+      margin-top: 20px;
+  }
+
+  /* App buttons alignment */
+  .app-buttons a img {
+      width: 120px;
+      margin: 10px 0;
+  }
+
+  /* Features section responsive design */
+  .features {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-item {
+      width: 90%; /* Take most of the width on mobile */
+      margin-bottom: 20px;
+  }
+
+  /* Comparison section adjustments */
+  .comparison {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+
+  .paypulse-features, .other-apps {
+      width: 90%;
+      margin: 20px auto;
+  }
+  
+  /* Footer responsiveness */
+  footer {
+      padding: 20px;
+      text-align: center;
+  }
+}
+
