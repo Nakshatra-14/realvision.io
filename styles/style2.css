@@ -29,9 +29,13 @@ nav {
   background-color: #fff;
   /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 }
-
-nav .logo h1 {
+nav .logo h1 a {
+  text-decoration: none;
   color: #ff9900;
+  font-size: xx-large;
+}
+nav .logo h1 {
+  
   display: inline-block;
   margin-left: 10px;
 }
@@ -77,10 +81,12 @@ nav ul li a {
   cursor: pointer;
   position: absolute;
   transition: background-color 0.3s ease;
-  right: 20px; /* Ensures the download button stays at the far right */
+  right: 30px; /* Ensures the download button stays at the far right */
 }
 
 .btn:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
   background-color: #23ab35;
 }
 
@@ -134,6 +140,8 @@ nav ul li a {
 }
 
 .btn_2:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
   background-color: #b39e00;
 }
 
@@ -179,7 +187,7 @@ nav ul li a {
   margin-top: 40px;
 }
 
-.paypulse-features, .other-apps {
+.nutriInfo-features, .other-apps {
   width: 45%;
   background-color: #fff;
   padding: 20px;
@@ -187,12 +195,17 @@ nav ul li a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.paypulse-features ul, .other-apps ul {
+.nutriInfo-features ul {
   list-style-type: none;
 }
 
-.paypulse-features li, .other-apps li {
+.nutriInfo-features li{
   margin: 10px 0;
+}
+
+.nutriInfo-features:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 footer {
@@ -258,6 +271,11 @@ body {
   overflow-x: hidden;  /* Prevent horizontal scrolling */
 }
 
+.logo:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+
 /* Ensure the hero section and other large sections use full width */
 .hero, .features-container, #benefits, footer {
   width: 100%vw;
@@ -320,7 +338,7 @@ body {
       margin-top: 20px;
   }
 
-  .paypulse-features, .other-apps {
+  .nutriInfo-features {
       width: 90%;
       margin: 20px auto;
   }
