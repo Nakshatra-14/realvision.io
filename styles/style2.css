@@ -29,13 +29,10 @@ nav {
   background-color: #fff;
   /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 }
-nav .logo h1 a {
-  text-decoration: none;
-  color: #ff9900;
-  font-size: xx-large;
-}
+
 nav .logo h1 {
   
+  color: #ff9900;
   display: inline-block;
   margin-left: 10px;
 }
@@ -271,10 +268,10 @@ body {
   overflow-x: hidden;  /* Prevent horizontal scrolling */
 }
 
-.logo:hover {
+ .logo:hover {
   transform: scale(1.5);
   transition: transform 0.3s ease;
-}
+} 
 
 /* Ensure the hero section and other large sections use full width */
 .hero, .features-container, #benefits, footer {
