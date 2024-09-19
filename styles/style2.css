@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  color: #ff9900;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  color: #fff;
+  padding: 60px 80px;
+  height: 80vh;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+}
+
+.hero-content span {
+  color: #ff9900;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.app-buttons a img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.hero-image img {
+  width: 400px;
+}
+
+/* Features Section */
+#features {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+.features-container h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.feature-item img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Comparison Section */
+#benefits {
+  padding: 60px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.comparison {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.paypulse-features, .other-apps {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paypulse-features ul, .other-apps ul {
+  list-style-type: none;
+}
+
+.paypulse-features li, .other-apps li {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
