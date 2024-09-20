@@ -1,0 +1,171 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#intro {
+    background-color: #caf0f8;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #023e8a;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#projects .project-grid, #team .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project, .team-member {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project img, .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project h3, .team-member h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: #023e8a;
+}
+
+.project p, .team-member p {
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #00b4d8;
+}
+
+/* Team Section */
+#team .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1rem;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #023e8a;
+}
+
+.team-member p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+footer {
+    background-color: #023e8a;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #caf0f8;
+}
