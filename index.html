@@ -1,17 +1,81 @@
-<!-- Homepage -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Vision</title>
+    <meta name="description" content="Real Vision Team - Showcase of Projects and Team Members">
+    <title>Real Vision | Team Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <h1>Real Vision</h1>
-    <h1>Projects</h1>
-    <a href="nutriInfo.html"><h3>NutriInfoApp</h3></a>
-    <a href="yoga.html"><h3>YogaWebsite</h3></a>
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <h1 class="logo">Real Vision</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>Welcome to Real Vision</h2>
+            <p>We are a passionate team dedicated to developing innovative solutions. Explore our projects below.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="nutriInfoThumbnail.jpg" alt="NutriInfoApp Thumbnail">
+                    <h3>NutriInfoApp</h3>
+                    <p>An app that provides nutritional information about food products and helps people with diabetes make healthier choices.</p>
+                    <a href="nutriInfo.html" class="btn">Learn More</a>
+                </div>
+                <div class="project">
+                    <img src="yogaThumbnail.jpg" alt="YogaWebsite Thumbnail">
+                    <h3>YogaWebsite</h3>
+                    <p>A platform that offers a variety of yoga routines for mental and physical well-being.</p>
+                    <a href="yoga.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="team">
+    <div class="container">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Nakshatra Naskar">
+                <h3>Nakshatra Naskar</h3>
+                <p>Team Leader & Android Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>Team Member 2</h3>
+                <p>Role</p>
+            </div>
+            <!-- Add more team members as necessary -->
+        </div>
+    </div>
+</section>
+
+  
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Real Vision. All rights reserved.</p>
+            <p><a href="mailto:info@realvision.com">Contact Us</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>
